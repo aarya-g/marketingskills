@@ -59,6 +59,10 @@ Rule: Tier budgets are HARD CAPS within the task complexity budget.
 If an agent needs >500 tokens → task was under-scoped as medium, re-classify as complex.
 SENTINEL flags any output that exceeds tier budget as a quality issue (Eye 4: Actionability).
 
+Exceptions (override caps):
+- Black Flash (agent scores 5): tier cap lifts to 2x for that agent only — peak insight justifies extended output. MONITOR logs the breach as a Black Flash event, not a quality flag.
+- Hollow Purple (Aar explicitly triggers full wave / "full analysis"): all tier caps scale up — Agent ≤1000 | Manager ≤300 | C-Suite ≤200. Task re-classifies as complex (800-2000). SENTINEL does not flag breaches in this mode.
+
 ---
 
 AI INFRASTRUCTURE: 3-TIER MANAGEMENT HIERARCHY
