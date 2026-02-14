@@ -246,6 +246,71 @@ For implementation, see the [tools registry](../../tools/REGISTRY.md). Key tools
 
 ---
 
+## GSG APPLICATION (Confirmed Intel — HIGH Confidence)
+
+### Why Referrals Are GSG's #1 Growth Lever
+
+| Metric | Confirmed Data | Source |
+|--------|---------------|--------|
+| Referral conversion rate | 42% | CRM cohort data |
+| Cold lead conversion rate | 4% | CRM cohort data |
+| Referral vs cold lead advantage | 10.5x | Cohort analysis |
+| Budget shift: ₹5L paid → referral | +12 enrollments | Altair modelling |
+| Current referral share | 62% | COMMAND CENTER |
+| Target referral share | 80% | GSG strategy |
+| Gap to close | 18 percentage points | Active priority |
+
+**Implication:** Every ₹1 shifted from Meta spend to referral activation = 10.5x more enrollment per rupee.
+
+### Highest-Value Referral Trigger (Confirmed)
+**Summer camp enrollment → referral ask = best timing**
+- Summer camp attendees have 2.1x higher retention
+- These parents are the most satisfied → highest referral propensity
+- **Action:** Always fire referral ask within 2 weeks of summer camp completion
+
+### GSG Referral Channels (Ranked by Effectiveness)
+1. **WhatsApp (primary)** — confirmed as #1 parent communication channel
+   - Individual forward > broadcast (feels personal)
+   - Peer validation in existing school WhatsApp groups
+2. **Personal conversation at campus events** — high trust, in-person ask
+3. **Email with personalized link** — trackable, lower conversion
+4. **School portal prompt** — visible but lower engagement rate
+
+### GSG Referral Incentive Structure (Recommended)
+**Double-sided, tiered:**
+- Referrer: Fee credit (₹15-25K) per successful enrollment
+- New enrollee: Registration waiver (₹5-10K) — removes friction
+- Tier 2: Referrer gets bonus if referred family also refers (compound loop)
+
+**Trigger timing:**
+- Ask #1: After first parent-teacher conference (30 days post-enrollment)
+- Ask #2: Summer camp completion (highest satisfaction moment)
+- Ask #3: Annual renewal confirmation (retention signal = referral ready)
+
+### Active Gap (Feb 2026)
+Alumni engagement down 20% — alumni network is high-value referral source.
+**Alert:** If alumni engagement continues declining, referral share will fall below 62%.
+Priority action: Quarterly alumni touchpoint program to re-activate this cohort.
+
+### Program Health Dashboard (Targets)
+| Metric | Current | Target | Status |
+|--------|---------|--------|--------|
+| Referral share | 62% | 80% | BEHIND |
+| Alumni engagement | -20% YoY | +10% | AT RISK |
+| WhatsApp referral rate | Unknown | 15% of parents | MEASURE |
+| Summer camp referral conversion | Unknown | 30% ask → enroll | MEASURE |
+
+---
+
+## Employee Spawn Triggers
+
+**Pattern 5 — Spawn QUANT when:** Referral program budget decision OR channel ROI comparison (referral vs paid)
+- Employee skills: statistical-reasoning, quantitative-analytical-toolkit
+- Job: Model ROI of proposed referral budget shift with confidence intervals
+- Output: ROI MODEL — ₹ impact, confidence range, break-even point
+
+---
+
 ## Related Skills
 
 - **launch-strategy**: For launching referral program effectively

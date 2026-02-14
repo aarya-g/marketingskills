@@ -305,6 +305,20 @@ For tracking, see also: [ga4.md](../../tools/integrations/ga4.md), [segment.md](
 
 ---
 
+## Employee Spawn Triggers
+
+**Pattern 1 — Spawn QUANT when:** CPA deviation >10% from target OR spend efficiency question
+- Employee skills: statistical-reasoning, data-querying-sql
+- Job: Statistical analysis of CPA delta — is it noise or signal? Root cause.
+- Output: QUANT BRIEF — significance test + diagnosis + recommended action
+
+**Pattern 4 — Spawn CREATIVE when:** Ad creative refresh OR new campaign launch requiring copy
+- Employee skills: copywriting, marketing-psychology
+- Job: Write ad copy variants calibrated to paid channel and parent persona
+- Output: AD COPY BRIEF — 3-5 variants per format, with angle rationale
+
+---
+
 ## Related Skills
 
 - **copywriting**: For landing page copy that converts ad traffic

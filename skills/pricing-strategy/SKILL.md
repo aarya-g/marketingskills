@@ -219,6 +219,15 @@ Identifies which features customers value most:
 
 ---
 
+## Employee Spawn Triggers
+
+**Pattern 8 — Spawn QUANT when:** Fee decision OR budget reallocation requiring statistical backing
+- Employee skills: statistical-reasoning, quantitative-analytical-toolkit
+- Job: Model the financial/statistical impact of STRATEGIST's proposed change
+- Output: IMPACT MODEL — expected outcome range, confidence %, risk flags
+
+---
+
 ## Related Skills
 
 - **page-cro**: For optimizing pricing page conversion

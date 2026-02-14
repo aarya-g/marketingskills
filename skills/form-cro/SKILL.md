@@ -420,6 +420,15 @@ Ideas to A/B test with expected outcomes
 
 ---
 
+## Employee Spawn Triggers
+
+**Pattern 2 — Spawn QUANT when:** Any form/funnel drop >20% vs benchmark OR A/B test setup needed
+- Employee skills: statistical-reasoning, ab-test-setup
+- Job: Design statistically valid test for proposed CRO change + set sample size
+- Output: TEST DESIGN BRIEF — hypothesis, sample size, duration, success metric
+
+---
+
 ## Related Skills
 
 - **signup-flow-cro**: For account creation forms

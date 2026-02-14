@@ -573,3 +573,83 @@ Organized by theme + sentiment for easy retrieval when writing copy, testimonial
 - Messaging updated based on VoC: Quarterly
 - Churn reduction from VoC fixes: 2-3% annually
 - Conversion rate improvement: 1-2% from better messaging
+
+---
+
+## 14. GSG APPLICATION (Confirmed Intel — HIGH Confidence)
+
+### Confirmed VoC Findings (Arsenal + Exit Interviews)
+
+| Finding | Source | Impact |
+|---------|--------|--------|
+| Parents hire for "global mobility," not "IB curriculum" | JTBD interviews | +22% conversion after messaging pivot |
+| 40% of churn caused by "communication gaps" (not fees) | Exit interviews | Weekly parent updates → -2.1% churn |
+| Summer camp attendees have 2.1x higher retention | Retention cohort analysis | Summer trial now mandatory recommendation |
+| Referred parents convert at 42% vs 4% cold leads | CRM cohort data | Word-of-mouth > paid for enrollment quality |
+
+### Active VoC Gap (BLOCKED — Feb 2026)
+**OWIS India repositioning is BLOCKED** — no VoC data to validate new positioning.
+This is a live HIGH-priority gap. ANALYST must commission VoC before CREATIVE can reposition.
+- Research needed: 10-15 parent interviews, OWIS current + prospective
+- Block expires when: VoC report delivered to STRATEGIST
+
+### GSG Parent Personas (Confirmed from JTBD Interviews)
+
+**Persona 1: Aspiring Global Parent (PRIMARY)**
+- JTBD: "Help my child access global universities and careers I couldn't reach"
+- Decision driver: International curriculum, global mobility outcomes
+- Anxieties: "Will this actually open doors outside India?"
+- Confirmed trigger: University placement outcomes, alumni career tracking
+- **Copy angle**: "Your child, globally prepared" (NOT "IB curriculum features")
+
+**Persona 2: Academic Achiever Parent**
+- JTBD: "Get my child into IIT/Oxbridge/Ivy League"
+- Decision driver: Academic rigor, past placement record
+- Anxieties: "Will they be competitive vs CBSE peers?"
+- **Copy angle**: "Top university results, consistently"
+
+**Persona 3: Community-Focused Parent**
+- JTBD: "Surround my child with the right peer group and values"
+- Decision driver: School culture, parent community quality
+- Anxieties: "Wrong influence on child"
+- **Copy angle**: "A community of families who invest in their children's future"
+
+### GSG-Specific Interview Guide (Parent Decision Research)
+
+**Opening (5 mins):**
+"Tell me about when you first started researching schools for your child..."
+
+**JTBD Core (20 mins):**
+1. "What was happening in your family when you decided to start looking seriously?"
+2. "What were you worried your child would miss out on if you stayed at your current school?"
+3. "Walk me through the moment you decided on [school] — what pushed you over the line?"
+4. "What would have to happen for you to consider leaving?"
+
+**Inversion Questions (10 mins):**
+5. "What almost stopped you from enrolling here?"
+6. "When you told other parents, what did they say?"
+7. "What's the one thing you wish we communicated better?"
+
+**Retention Signals (5 mins):**
+8. "How often do you get updates from the school? Is it enough?"
+9. "Have you recommended this school to anyone? What did you tell them?"
+
+### Communication Gap Protocol (Most Common GSG Churn Driver)
+Exit interviews confirmed: 40% of churn = parents feel "disconnected from school."
+
+**Signals of communication gap forming (monitor these):**
+- Parent hasn't opened school portal in 7+ days
+- No attendance at parent events in 30+ days
+- NPS score drops below 7
+- WhatsApp group activity declining (Pune — confirmed MEDIUM risk, Feb 2026)
+
+**Standard response:** Proactive personal outreach within 48 hours of any signal.
+
+---
+
+## Employee Spawn Triggers
+
+**Pattern 6 — Spawn QUANT when:** Any VoC study producing quantitative survey data (n>50)
+- Employee skills: statistical-reasoning, python-marketing-analytics
+- Job: Statistical analysis of survey results — significance, segmentation, confidence
+- Output: QUANTIFIED VoC BRIEF — themes ranked by statistical weight, confidence %
