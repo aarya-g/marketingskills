@@ -30,7 +30,7 @@ source marketing_analytics/bin/activate  # Mac/Linux
 pip install pandas numpy matplotlib seaborn scikit-learn statsmodels requests beautifulsoup4 prophet openpyxl
 ```
 
-### PyCharm Project Setup
+### Antigravity Project Setup
 1. **New Project** -> Select existing interpreter (venv above)
 2. **Project Structure:**
 ```
