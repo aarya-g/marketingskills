@@ -62,6 +62,7 @@ SENTINEL flags any output that exceeds tier budget as a quality issue (Eye 4: Ac
 Exceptions (override caps):
 - Black Flash (agent scores 5): tier cap lifts to 2x for that agent only — peak insight justifies extended output. MONITOR logs the breach as a Black Flash event, not a quality flag.
 - Hollow Purple (Aar explicitly triggers full wave / "full analysis"): all tier caps scale up — Agent ≤1000 | Manager ≤300 | C-Suite ≤200. Task re-classifies as complex (800-2000). SENTINEL does not flag breaches in this mode.
+  Black Flash is the DEFAULT standard in Hollow Purple — all agents are expected to score 5. MONITOR flags any agent scoring below 4 as a quality issue (elevated threshold vs normal <2 rule). Black Flash events inside Hollow Purple are logged as confirmation, not exception.
 
 ---
 

@@ -30,16 +30,40 @@ source marketing_analytics/bin/activate  # Mac/Linux
 pip install pandas numpy matplotlib seaborn scikit-learn statsmodels requests beautifulsoup4 prophet openpyxl
 ```
 
-### Antigravity Project Setup
-1. **New Project** -> Select existing interpreter (venv above)
-2. **Project Structure:**
+### Antigravity Project Setup (Agentic IDE)
+Antigravity is Google's autonomous code generation agent (Gemini 3 Pro) — not an IDE.
+It plans, writes, tests, and debugs end-to-end. Delegate code generation here; retain analysis and strategy in Claude.
+
+**Mission Definition Format (how to prompt Antigravity):**
+```
+MISSION: [one-line objective]
+INPUT: [data source — CSV path, API, database]
+OUTPUT: [deliverable — script name, output location]
+VALIDATE: [success condition — "script runs clean", "output matches expected format"]
+LIBS: [required libraries if known]
+```
+
+**Delegation Rules — what goes to Antigravity vs Claude:**
+| Task | Route to |
+|------|----------|
+| Write Python pipeline/script | Antigravity |
+| Build ML model (training + scoring) | Antigravity |
+| Build web scraper | Antigravity |
+| Create dashboard (matplotlib/plotly) | Antigravity |
+| Interpret output / draw conclusions | Claude |
+| Strategy based on data | Claude |
+| Statistical significance judgment | Claude (QUANT) |
+
+**Output location:** `marketingskills/scripts/` — all Antigravity-generated scripts saved here.
+
+**Project Structure (venv compatible with Antigravity):**
 ```
 marketing_analytics/
 ├─ data/
 │  ├─ raw/           # HubSpot exports, CRM dumps
 │  ├─ processed/     # Cleaned data
 │  └─ outputs/       # Reports, charts
-├─ scripts/
+├─ scripts/          # Antigravity-generated scripts land here
 │  ├─ data_cleaning.py
 │  ├─ analysis.py
 │  └─ scraper.py
