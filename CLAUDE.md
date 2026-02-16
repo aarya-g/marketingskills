@@ -230,6 +230,7 @@ RECON ✅ CLEAN — Pre-flight intel, research, confidence scoring
 SENTINEL ✅ CLEAN — Per-execution quality gate + skill upgrade triggers
   Manager: Intelligence Director | C-Suite: COO
   Fires: Auto after Wave 2 on Wave/Full-team. Never on Solo/Duo.
+  Exception: Fires on Solo/Duo tasks when Kimi was used for any generation step — Kimi output must pass the same 7-eye quality gate before delivery.
   On-demand: Aar says "audit this" or "upgrade [skill-name]"
 
   Screening checklist (Seven Eyes):
