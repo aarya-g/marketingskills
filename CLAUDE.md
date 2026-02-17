@@ -232,6 +232,11 @@ SENTINEL ✅ CLEAN — Per-execution quality gate + skill upgrade triggers
   Fires: Auto after Wave 2 on Wave/Full-team. Never on Solo/Duo.
   Exception: Fires on Solo/Duo tasks when Kimi was used for any generation step — Kimi output must pass the same 7-eye quality gate before delivery.
   Kimi quality benchmark: Claude Opus 4.6 standard. SENTINEL evaluates Kimi output against what Opus would produce for the same task. Any gap in depth, accuracy, context-calibration, or strategic framing → FLAG or REJECT. Kimi is a production tool, not a lower-quality substitute.
+  Kimi remediation protocol (token-efficient):
+    FLAG (1-2 eyes fail) → parent Claude agent patches failing sections only — no full rewrite. SENTINEL re-screens patched output.
+    REJECT (3+ eyes fail) → parent Claude agent rewrites failing sections only, preserves passing sections. SENTINEL re-screens.
+    If re-screen fails again → full Claude rewrite. Kimi output discarded.
+    Rule: Claude touches the minimum required to reach Opus standard. Never rewrite what passed.
   On-demand: Aar says "audit this" or "upgrade [skill-name]"
 
   Screening checklist (Seven Eyes):
