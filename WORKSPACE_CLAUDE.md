@@ -14,6 +14,8 @@ A content-only repository of 36 AI agent skills for marketing tasks (CRO, copywr
 - `big4-operational-frameworks` — Deloitte/PwC/KPMG/EY execution, AI transformation, risk, TOM
 - `marketing-execution-persuasion` — Breakthrough Advertising, DASH Method, Hormozi offers, 48 Laws, Google PMax, Meta OCM
 
+**WORKSPACE_CLAUDE.md** — GitHub backup mirror of `~/.claude/CLAUDE.md`. Keep in sync when the global file changes.
+
 ### my-first-claude-project/
 A minimal Node.js project (CommonJS) with a single `index.js` entry point.
 
@@ -24,8 +26,35 @@ MCP server implementations:
 - `mysql-mcp/` — MySQL MCP server
 - `REGISTRY.md` — index of 29 tool integrations (same as `~/.claude/tools/REGISTRY.md`)
 
+Note: `marketingskills/tools/` also contains integrations/ and MCP servers — separate from root `tools/`.
+
 ### .agents/skills/ and .claude/skills/
 Custom skills not in the marketingskills upstream repo: `find-skills`, `skill-creator`, `vercel-composition-patterns`, `vercel-react-best-practices`, `vercel-react-native-skills`, `web-design-guidelines`. These mirror each other and load into Claude Code's skill system.
+
+---
+
+## nvidia-nim-mcp Architecture
+
+The MCP server exposes **3 tools** over stdio transport:
+
+| Tool | Purpose |
+|---|---|
+| `kimi_chat` | Single Kimi call with custom system prompt |
+| `kimi_swarm` | N parallel agents via `Promise.all()` — max 40 (RPM limit) |
+| `kimi_agent_task` | Route to pre-built role from the 15-agent marketing team |
+
+**Model routing (3 variants):**
+- `moonshotai/kimi-k2.5` — primary, all generation tasks
+- `moonshotai/kimi-k2-thinking` — auto-selected for reasoning-heavy roles: STRATEGIST, QUANT, CONSULTANT, PRODUCT
+- `moonshotai/kimi-k2-instruct` — fallback
+
+**Rate limiting:** Sliding 60s window, hard cap at 40 RPM, warning at 35 RPM. Tracked in-process via `rpmTracker`. `kimi_swarm` counts each agent as 1 request.
+
+**Requires:** `NVIDIA_API_KEY` env var. Server exits on startup if missing.
+
+**`kimi_swarm` optional `aggregate_prompt`:** If provided, fires a final synthesis call combining all agent outputs after parallel execution completes.
+
+---
 
 ## marketingskills: Key Conventions
 
@@ -55,14 +84,25 @@ description: When to use this skill. Include trigger phrases.
 ### Validation (no automated tests)
 Manually verify: valid YAML frontmatter, `name` matches directory, naming rules followed, no sensitive data.
 
+---
+
 ## my-first-claude-project: Commands
 - Run: `node my-first-claude-project/index.js`
 - No test suite configured yet
 
+---
+
 ## Agent Hierarchy
-Full 3-tier AI agent hierarchy is defined in `marketingskills/CLAUDE.md`. Read it when executing marketing tasks or managing agent orchestration. Key registries live in `marketingskills/.sentinel/`:
+Full 3-tier AI agent hierarchy is defined in `marketingskills/CLAUDE.md`. Read it when executing marketing tasks or managing agent orchestration.
+
+**Key registries in `marketingskills/.sentinel/`:**
 - `intel-gaps.md` — RECON-confirmed intel gaps
 - `upgrade-log.md` — SENTINEL skill upgrade history
+- `skill-scores.md` — MONITOR per-agent skill scores (1-5)
+- `black-flash-log.md` — MONITOR Black Flash events + gap diagnoses
+- `employee-log.md` — MONITOR employee agent spawn tracking
+
+---
 
 ## Marketing Skills: Tools & Context
 
